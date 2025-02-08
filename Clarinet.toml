@@ -1,0 +1,25 @@
+[project]
+name = 'dex-swap'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+
+
+[contracts.x-token01]
+path = 'contracts/x-token01.clar'
+clarity_version = 1
+epoch = 2.05
+
+[contracts.y-token01]
+path = 'contracts/y-token01.clar'
+clarity_version = 1
+epoch = 2.05
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

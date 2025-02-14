@@ -1,6 +1,8 @@
 ;; sip010-token
 (impl-trait .trait-sip-010-ft-standard.sip-010-trait)
 
+
+
 ;; stone-token
 (define-fungible-token stone-token)
 
